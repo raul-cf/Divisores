@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testDivisores" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVj-18-5dY">
+                                <rect key="frame" x="157" y="156" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ahh-5z-gPl">
+                                <rect key="frame" x="177" y="193" width="21.5" height="22"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="wand.and.stars" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculoDivis:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pQJ-r0-fhD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cálculo de divisores" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="rL0-9o-2Aw">
+                                <rect key="frame" x="92.5" y="40" width="190.5" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="cB9-ZY-3DG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="67x-OM-0jj">
+                                <rect key="frame" x="140" y="94" width="95" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="bzz-pb-bnX">
+                                <rect key="frame" x="100" y="253" width="175" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="WCf-66-d1Y">
+                                <rect key="frame" x="24" y="317" width="327" height="4"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQa-Vc-cPl">
+                                <rect key="frame" x="187.5" y="355" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bzz-pb-bnX" firstAttribute="top" secondItem="Ahh-5z-gPl" secondAttribute="bottom" constant="38" id="8SR-fD-Dxg"/>
+                            <constraint firstItem="67x-OM-0jj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="140" id="JIu-zl-Q3r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bzz-pb-bnX" secondAttribute="trailing" constant="100" id="JaY-cw-qFT"/>
+                            <constraint firstItem="bzz-pb-bnX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wyn-Xa-fwo"/>
+                            <constraint firstItem="hQa-Vc-cPl" firstAttribute="top" secondItem="WCf-66-d1Y" secondAttribute="bottom" constant="34" id="ZmX-mS-FVG"/>
+                            <constraint firstItem="hQa-Vc-cPl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dei-TD-gKL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="67x-OM-0jj" secondAttribute="trailing" constant="140" id="eQt-BR-07o"/>
+                            <constraint firstItem="WCf-66-d1Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="fdb-FM-Sro"/>
+                            <constraint firstItem="rL0-9o-2Aw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="j64-rY-5zO"/>
+                            <constraint firstItem="67x-OM-0jj" firstAttribute="top" secondItem="rL0-9o-2Aw" secondAttribute="bottom" constant="27" id="jeI-YQ-y0M"/>
+                            <constraint firstItem="Ahh-5z-gPl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pdI-3v-2VJ"/>
+                            <constraint firstItem="WCf-66-d1Y" firstAttribute="top" secondItem="bzz-pb-bnX" secondAttribute="bottom" constant="64" id="qrc-o8-HVh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WCf-66-d1Y" secondAttribute="trailing" constant="24" id="r5p-Be-MEP"/>
+                            <constraint firstItem="HVj-18-5dY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rXA-3d-Jpn"/>
+                            <constraint firstItem="Ahh-5z-gPl" firstAttribute="top" secondItem="HVj-18-5dY" secondAttribute="bottom" constant="16" id="wOx-k2-oAs"/>
+                            <constraint firstItem="HVj-18-5dY" firstAttribute="top" secondItem="67x-OM-0jj" secondAttribute="bottom" constant="28" id="yus-45-G6q"/>
+                            <constraint firstItem="rL0-9o-2Aw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zJg-yS-00c"/>
+                            <constraint firstItem="bzz-pb-bnX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="zTg-nI-Aog"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelPorcet" destination="hQa-Vc-cPl" id="fqm-jQ-Nid"/>
+                        <outlet property="labelResult" destination="bzz-pb-bnX" id="EdX-xy-Jtp"/>
+                        <outlet property="progressBar" destination="WCf-66-d1Y" id="fTm-Bp-mTI"/>
+                        <outlet property="textFieldA" destination="67x-OM-0jj" id="4kT-1X-8le"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10.4" y="71.514242878560722"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="wand.and.stars" catalog="system" width="128" height="113"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
